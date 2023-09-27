@@ -9,3 +9,4 @@
 // 	— Ushbu video darslik nimlarni o'z ichiga oladi?
 
 // npm i typescript -g
+// detecting errore withot running the code
