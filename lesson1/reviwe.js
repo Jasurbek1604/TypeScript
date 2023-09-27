@@ -10,3 +10,5 @@
 
 // npm i typescript -g
 // detecting errore withot running the code
+// static type checker
+// errorlarni oldini olish uchun ishlatiladi
