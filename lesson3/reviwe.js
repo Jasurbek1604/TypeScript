@@ -7,3 +7,19 @@
 // 	— constructor signature
 // 	— Generics  as a function
 // 	— Limitations
+
+//!void => function hech narsaga return qilmaydigan holda undefined qaytarish uchun
+
+//!never =>
+
+//!unknown =>
+
+//!Function expppression
+
+// function getData(a: number, b: number): number | void {
+//   return a + b;
+// }
+
+// console.log(getData(5, 5));
+
+//!callback function
