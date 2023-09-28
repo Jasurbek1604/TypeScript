@@ -14,6 +14,13 @@ type callProp = {
   (a: number): number;
 };
 
-function get(key: string): callProp {
+type param = {
+  key: string;
+  value?: number;
+};
+
+function get(prop: param): callProp {
   return (a: number) => a;
 }
+
+console.log(get({ key: "jasurbel", value: 5 }));

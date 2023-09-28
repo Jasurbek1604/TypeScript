@@ -23,3 +23,18 @@
 // console.log(getData(5, 5));
 
 //!callback function
+
+// type call = number; => clreate type
+
+// function get(a: number): call {
+//   return a;
+// }
+
+// type callProp = {
+//   //!=> callback funtion uchun type yaratish;
+//   (a: number): number,
+// };
+
+// function getData(key: string): callProp {
+//   return (a: number) => a;
+// }

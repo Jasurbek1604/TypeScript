@@ -4,6 +4,7 @@
 function calc(a) {
     return a;
 }
-function get(key) {
+function get(prop) {
     return function (a) { return a; };
 }
+console.log(get({ key: "jasurbel", value: 5 }));
