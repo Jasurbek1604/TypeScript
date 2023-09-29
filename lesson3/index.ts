@@ -23,4 +23,18 @@ function get(prop: param): callProp {
   return (a: number) => a;
 }
 
-console.log(get({ key: "jasurbel", value: 5 }));
+// console.log(get({ key: "jasurbel", value: 5 })(9));
+
+type call = {
+  new (): Object;
+};
+
+const getData = (fn: call): string => {
+  return new fn().toString();
+};
+
+function consFunc() {
+  return Date;
+}
+
+console.log(getData(consFunc()));

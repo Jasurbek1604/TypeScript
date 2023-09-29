@@ -7,4 +7,10 @@ function calc(a) {
 function get(prop) {
     return function (a) { return a; };
 }
-console.log(get({ key: "jasurbel", value: 5 }));
+var getData = function (fn) {
+    return new fn().toString();
+};
+function consFunc() {
+    return Date;
+}
+console.log(getData(consFunc()));
