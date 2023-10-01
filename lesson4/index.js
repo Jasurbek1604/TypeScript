@@ -12,3 +12,7 @@ var object = {
     },
 };
 console.log(object.age);
+var a = {
+    name: "jasurbek",
+    age: 19,
+};

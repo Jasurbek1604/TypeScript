@@ -71,3 +71,14 @@ let object: Prop = {
 };
 
 console.log(object.age);
+
+interface None<Type, Text> {
+  name: Type;
+  age: Text;
+  [index: string]: number | string | Type | Text;
+}
+
+const a: None<string, number> = {
+  name: "jasurbek",
+  age: 19,
+};
