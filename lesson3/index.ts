@@ -25,16 +25,32 @@ function get(prop: param): callProp {
 
 // console.log(get({ key: "jasurbel", value: 5 })(9));
 
-type call = {
-  new (): Object;
-};
+// type call = {
+//   new (): Object;
+// };
 
-const getData = (fn: call): string => {
-  return new fn().toString();
-};
+// const getData = (fn: call): string => {
+//   return new fn().toString();
+// };
 
-function consFunc() {
-  return Date;
+// function consFunc() {
+//   return Date;
+// }
+
+// console.log(getData(consFunc()));
+
+//!generics
+
+function getData<Type>(array: Type[]) {
+  return (value: Type) => {
+    array.push(value);
+    console.log(array);
+  };
 }
 
-console.log(getData(consFunc()));
+let arrStr = getData<string>([]);
+let numArr = getData<number>([]);
+arrStr("frontend");
+arrStr("backend");
+numArr(123);
+numArr(45);
