@@ -33,3 +33,10 @@ function get(str?: string) {
     let title: string = str;
   }
 }
+
+function getNone(): never {
+  throw new Error("hello");
+}
+
+//!never => function malum bolmagan qiymat qaytarganda
+//!unknown => never bilan bir xil malum bolmagan malumot return qiladi function

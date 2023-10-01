@@ -30,3 +30,8 @@ function get(str) {
         var title = str;
     }
 }
+function getNone() {
+    throw new Error("hello");
+}
+//!never => function malum bolmagan qiymat qaytarganda
+//!unknown => never bilan bir xil malum bolmagan malumot return qiladi function
