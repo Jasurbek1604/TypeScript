@@ -17,19 +17,42 @@ let objs: usr = {
 //!extends interface
 
 //readonly => update qilish imkoni bolmaydi
-interface name {
-  readonly name: string;
-}
+// interface name {
+//   readonly name: string;
+// }
 
-interface age {
+// interface age {
+//   age: number;
+// }
+
+// interface use extends name, age {
+//   title?: string;
+// }
+
+// let obb: use = {
+//   name: "none",
+//   age: 15,
+// };
+
+// interface writable {
+//   name?: string;
+//   age?: number;
+// }
+
+// let w: writable = obb;
+
+// console.log(w);
+
+// w.name = "n";
+
+// console.log(obb);
+
+interface prop {
+  name: string;
   age: number;
 }
 
-interface use extends name, age {
-  title?: string;
-}
-
-let obb: use = {
-  name: "none",
-  age: 15,
+let object: prop = {
+  name: "jasurbek",
+  age: 19,
 };
