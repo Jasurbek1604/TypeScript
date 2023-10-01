@@ -38,3 +38,8 @@ function getData(a) {
 getData("dkvndkvdnk");
 getData([5, 5, "dd", 9, 9, 9]);
 // getData(55)
+//!function overload with optional chaining
+function getS(a, b) {
+    return "".concat(b);
+}
+console.log(getS(4, "vdsv"));

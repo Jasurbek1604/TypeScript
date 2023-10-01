@@ -63,3 +63,11 @@ function getData<Type extends { length: number }>(a: Type) {
 getData("dkvndkvdnk");
 getData([5, 5, "dd", 9, 9, 9]);
 // getData(55)
+
+//!function overload with optional chaining
+
+function getS(a?: number, b?: string): string {
+  return `${b}`;
+}
+
+console.log(getS(4, "vdsv"));
