@@ -25,3 +25,4 @@ var Person = /** @class */ (function () {
 }());
 var p = new Person("jasurbek");
 console.log(p.age);
+var course = "frontend";

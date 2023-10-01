@@ -99,3 +99,7 @@ class Person implements clasInter {
 let p = new Person("jasurbek");
 
 console.log(p.age);
+
+type course = "frontend" | "backend" | "mobile";
+
+const course: course = "frontend";
