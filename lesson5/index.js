@@ -10,3 +10,23 @@ function check(a) {
         }
     }
 }
+var time = function (key) {
+    var date = new Date();
+    var day = {
+        ll: "".concat(date.getDate()),
+        l: "".concat(date.getMonth()),
+    };
+    return day[key];
+};
+// console.log(time("l"));
+// console.log(time("ll"));
+function getLength(str) {
+    if (typeof str === "string") {
+        console.log(str.length);
+    }
+}
+function get(str) {
+    if (typeof str === "string") {
+        var title = str;
+    }
+}
