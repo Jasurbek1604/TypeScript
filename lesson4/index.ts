@@ -47,12 +47,27 @@ let objs: usr = {
 
 // console.log(obb);
 
+//! indexed signature => objectlarni ketva valuelarga umumiy type berish
+
 interface prop {
-  name: string;
-  age: number;
+  //!objectdagi valuelar hamms i string bolishi kerak
+  [index: string]: string;
 }
 
-let object: prop = {
+interface Prop {
+  //!objectdagi valuelar hamms i string yoki number bolishi kerak
+  year: number;
+  check?: () => void;
+  [index: string]: string | number | Function | undefined;
+}
+
+let object: Prop = {
   name: "jasurbek",
   age: 19,
+  year: 2023,
+  check() {
+    console.log("hello");
+  },
 };
+
+console.log(object.age);

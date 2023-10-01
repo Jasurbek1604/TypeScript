@@ -6,4 +6,9 @@ var objs = {
 var object = {
     name: "jasurbek",
     age: 19,
+    year: 2023,
+    check: function () {
+        console.log("hello");
+    },
 };
+console.log(object.age);
