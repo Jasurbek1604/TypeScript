@@ -82,3 +82,20 @@ const a: None<string, number> = {
   name: "jasurbek",
   age: 19,
 };
+
+//! Class
+
+interface clasInter {
+  // name: string;
+  age?: number;
+}
+
+class Person implements clasInter {
+  constructor(name: string) {}
+  private name = "jasurbek";
+  age = 19;
+}
+
+let p = new Person("jasurbek");
+
+console.log(p.age);

@@ -16,3 +16,12 @@ var a = {
     name: "jasurbek",
     age: 19,
 };
+var Person = /** @class */ (function () {
+    function Person(name) {
+        this.name = "jasurbek";
+        this.age = 19;
+    }
+    return Person;
+}());
+var p = new Person("jasurbek");
+console.log(p.age);
