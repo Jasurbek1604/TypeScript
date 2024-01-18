@@ -1,0 +1,26 @@
+//!Functions
+
+void -> qiymat qaytarmaydign function ga beriladigan type
+
+never -> Function returning never must not have a reachable end point hechqachon erishib bolmaydigan qiymatga nisbatan
+ 
+unknown -> noma'lum qiymatga
+
+let unStr:unknown = "Jasurbek"
+unStr.trim()//!Error
+
+function getData():void {
+    let name : string= "Jasurbek"
+    console.log(name)
+}
+
+getData()
+
+funciton getType(a:number, b:number):number | void{
+    return a + b;
+}
+
+console.log(getType(10,50));
+
+
+Callback function -> function inside another funciton paramatr
