@@ -1,0 +1,50 @@
+Installing typescript -> npm install typescript -g 
+Check typescript -> tsc -v
+Initialization TS and set tsconfig.json file -> tsc --init
+We mus edit tsconfig.json -> "target": "es2016" to "target": "es6"
+
+
+Types
+any -> harqanday malumot turini qabul qiladi
+let anyData:any = "string" -> any string
+let anyDataArray:any[] = [] -> any Array
+ley anyDataArrayStr:string[] = ["jasubek" , "none"] -> onlys string in arry
+
+number -> let num:number = 5 , let num:number[]= [1,2,3,4,5] 
+string -> let str:string = "jasurbek", let strArr:string[]= ["a","b","c"];
+
+array -> let arr : [string, number] = ["jasurbek", 19]
+
+Onion 
+let srtingOrNumber : string | number = 1233;
+srtingOrNumber = "Jasurbek";
+
+Tuple -> only usingwith arrays, exact type in array
+let tupleArr: [string, number][];
+tupleArr=[
+    ["Jasubek", 19],
+    ["Jasubek", 19],
+]
+
+//Enum -> enumaration
+
+enum numbers{
+    first, //0, //=5,
+    second, //1, //6
+    thrid, //2, //7
+}
+
+console.log(numbers.first, numbers.second, numbers.thrid);
+
+//Type assertion -> any typidanststic typega o'tkazadi,
+
+let id:any = 15;
+
+let strId = <string>id;
+
+strId = "Jasurbek";
+
+let numId = <number>id;
+let numId1 = id as number;
+
+numId = 20;
