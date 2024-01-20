@@ -1,66 +1,92 @@
-//!Function
+// //!Function
 
-//!void -> qiymat qaytarmaydigan function
+// //!void -> qiymat qaytarmaydigan function
 
-//!Function expression
+// //!Function expression
 
-function getType(): number | void {
-  return 5;
-}
+// function getType(): number | void {
+//   return 5;
+// }
 
-// console.log(getType());
+// // console.log(getType());
 
-//!Calback function
+// //!Calback function
 
-function callback(): number {
-  return 5;
-}
+// function callback(): number {
+//   return 5;
+// }
 
-function getCallback(fn: Function) {
-  console.log(fn());
-}
+// function getCallback(fn: Function) {
+//   // console.log(fn());
+// }
 
-getCallback(callback);
+// getCallback(callback);
 
-type callProp = {
-  (a: string): string;
-};
+// type callProp = {
+//   (a: string): string;
+// };
 
-function f(): callProp {
-  return (a) => a;
-}
+// function f(): callProp {
+//   return (a: string) => a;
+// }
 
-console.log(f()("10"));
+// console.log(f()("10"));
 
-type param = {
-  name: string;
-  age: number;
-};
+// type param = {
+//   name: string;
+//   age: number;
+// };
 
-function userInfo(prop: param): number {
-  return prop.age;
-}
+// function userInfo(prop: param): number {
+//   return prop.age;
+// }
 
-console.log(userInfo({ name: "jasurbek", age: 50 }));
+// console.log(userInfo({ name: "jasurbek", age: 50 }));
 
-let arr: string[] = [];
+// let arr: string[] = [];
 
-arr.push("Jasubek");
-arr.push("None");
+// arr.push("Jasubek");
+// arr.push("None");
 
-//!Generic function
+// //!Generic function
 
-const getData = <Type>(arr: Type[]) => {
-  return (value: Type) => {
-    arr.push(value);
-    console.log(arr);
-  };
-};
+// const getData = <Type>(arr: Type[]) => {
+//   return (value: Type) => {
+//     arr.push(value);
+// console.log(arr);
+//   };
+// };
 
-const strArr = getData<string>([]);
+// const strArr = getData<string>([]);
 
-strArr("jasurbek");
+// strArr("jasurbek");
 
-const numArr = getData<number>([]);
+// const numArr = getData<number>([]);
 
-numArr(5);
+// numArr(5);
+
+// //!constractor signature
+
+// type callProps = {
+//   new (): Object;
+// };
+
+// const getDatas = (fn: callProps): string => {
+//   return new fn().toString();
+// };
+
+// function constFunc() {
+//   return Date;
+// }
+
+// console.log(getDatas(constFunc()));
+// console.log(typeof constFunc());
+
+//!
+// function getData<Type extends { length: number }>(a: Type) {
+//   console.log(a.length);
+// }
+
+// getData<string>("jasurbek");
+// getData<number[]>([1, 2, 3, 4, 5, 6, 7]);
+// getData<number>(5);

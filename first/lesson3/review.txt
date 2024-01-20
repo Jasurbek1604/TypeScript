@@ -24,3 +24,5 @@ console.log(getType(10,50));
 
 
 Callback function -> function inside another funciton paramatr
+
+Generic functions -> 
