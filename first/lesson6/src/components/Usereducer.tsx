@@ -1,7 +1,5 @@
 import React, { useReducer } from "react";
 
-type Props = {};
-
 const fruits = [
   { id: 1, name: "apple" },
   { id: 2, name: "orange" },
@@ -10,7 +8,7 @@ const fruits = [
   { id: 5, name: "cherry" },
 ];
 
-const Usereducer = (props: Props) => {
+const Usereducer: React.FC = () => {
   type Actions =
     | { type: "add"; value: string }
     | { type: "remove"; id: number };
