@@ -1,0 +1,4 @@
+void function -> qiymat qaytarmaydifan function type
+never function -> hech qachon tugamaydigan funciton
+signature function -> avvaldan elon qilingan shablondan chiqmagan holda function yozish
+function oveload -> har bir parametrga alohida type berish imkonini beradi
