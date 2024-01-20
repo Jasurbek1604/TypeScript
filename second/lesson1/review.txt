@@ -1,0 +1,14 @@
+TypeScript nima -> JavaScript ni obyektga yonaltitilgan va tiplar bilan ishlovchi dasturlar tili , superset of JavaSctipt
+
+Installition:
+    npm i -g typescript
+    tsc -v
+
+
+Configuration
+    {
+        "compilerOptions": {
+            "target":"es6",
+            "sourceMap":true,
+        }
+    }
