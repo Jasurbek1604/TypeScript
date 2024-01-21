@@ -1,0 +1,8 @@
+Type assertion -> bit tipdan boshqa tipga o'tish
+union type -> bir ozgarivchiga birnechta tiplarni berish
+literal types -> o'zgaruvchiga static qiymatlar va tiplar berish
+type aliases -> o'zgaruvchiga static qiymatlar va tiplarni Type orqali berish
+or | ->  yoki
+and & -> va 
+optional ? -> type yoki undefined
+in -> obyektni ishiga bor yoki yoqligini tekshirish uchun  qollaniladi
