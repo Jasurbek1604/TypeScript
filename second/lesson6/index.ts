@@ -45,3 +45,10 @@ jasur.age = 15;
 
 console.log(jasur._name);
 console.log(jasur.age);
+
+//!instanceof -> nonprimitive data typelar uchun ishlatiladi
+
+console.log(jasur instanceof Person);
+console.log({} instanceof Object);
+console.log([] instanceof Object);
+console.log([] instanceof Array);
